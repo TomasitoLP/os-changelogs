@@ -22,25 +22,5 @@
       "- Fixed multiple bugs.",
       "- Multiple QOL improvements."
     ]
-  },
-  "3": {
-    "Date": "4/11/2025",
-    "Version": "1.1.1",
-    "Title": "[1.1.1] Test changelog",
-    "Content": [
-      "- Added settings.",
-      "- Fixed multiple bugs.",
-      "- Multiple QOL improvements."
-    ]
-  },
-  "4": {
-    "Date": "4/11/2025",
-    "Version": "1.1.2",
-    "Title": "[1.1.2] Test changelog (#2)",
-    "Content": [
-      "- description test 1",
-      "- description test 2",
-      "- description test 3"
-    ]
   }
 }
