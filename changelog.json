@@ -32,5 +32,15 @@
       "- Fixed multiple bugs.",
       "- Multiple QOL improvements."
     ]
+  },
+  "4": {
+    "Date": "4/11/2025",
+    "Version": "1.1.2",
+    "Title": "[1.1.2] Test changelog #2",
+    "Content": [
+      "- description test",
+      "- deacription test 2",
+      "- description test 3"
+    ]
   }
 }
