@@ -41,7 +41,7 @@ jobs:
           # Přesný timestamp v UTC (sekundy od epochy)
           TIMESTAMP=$(date -u +%s)
           # Kontext s explicitními novými řádky
-          CONTEXT=$(echo -e "-# ©️ Author: $COMMIT_AUTHOR\n -# 🗓️ Full date: <t:$TIMESTAMP>")
+          CONTEXT=$(echo -e "-# ©️ Author: $COMMIT_AUTHOR\n-# 🗓️ Full date: <t:$TIMESTAMP>")
           
           # Přidání Game Link do description s dvěma novými řádky
           FULL_DESCRIPTION=$(echo -e "$CONTENT\n\n**Game Link**: [JOIN TODAY](https://roblox.com)")
