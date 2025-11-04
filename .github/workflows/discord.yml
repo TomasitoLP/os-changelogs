@@ -1,4 +1,4 @@
-name: Discord Notification
+name: DC Notification
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
           VERSION=$(jq -r '.[keys[-1]].Version // "Není dostupné"' changelog.json 2>/dev/null || echo "Není dostupné")
           TITLE=$(jq -r '.[keys[-1]].Title // "Není dostupné"' changelog.json 2>/dev/null || echo "Není dostupné")
           DATE=$(jq -r '.[keys[-1]].Date // "Není dostupné"' changelog.json 2>/dev/null || echo "Není dostupné")
-          CONTENT=$(jq -r '.[keys[-1]].Content[] // empty' changelog.json 2>/dev/null | sed 's/^/- /' | paste -sd '\n' || echo "Žádný obsah")
+          CONTENT=$(jq -r '.[keys[-1]].Content[] // empty' changelog.json 2>/dev/null | paste -sd '\n' || echo "Žádný obsah")
           echo "Extrahovaný Content: $CONTENT"
           
           # Vytvoření JSON pro Discord Embed
@@ -47,7 +47,7 @@ jobs:
               {
                 "title": "$TITLE",
                 "description": "$CONTENT",
-                "color": 15258703,  -- Zelená barva (hex: #E8B923)
+                "color": 15258703,
                 "fields": [
                   {
                     "name": "Autor",
