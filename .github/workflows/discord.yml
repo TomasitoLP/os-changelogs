@@ -38,15 +38,12 @@ jobs:
           CONTENT=$(jq -r '.[keys[-1]].Content[] // empty' changelog.json 2>/dev/null | paste -sd '\n' || echo "Not found")
           echo "Extrahovaný Content: $CONTENT"
           
-          # Přesný timestamp v UTC (sekundy od epochy)
           TIMESTAMP=$(date -u +%s)
           # Kontext s explicitními novými řádky
           CONTEXT=$(echo -e "-# ©️ Author: $COMMIT_AUTHOR\n-# 🗓️ Full date: <t:$TIMESTAMP>")
           
-          # Přidání Game Link do description s dvěma novými řádky
-          FULL_DESCRIPTION=$(echo -e "$CONTENT\n\n**Game Link**: [JOIN TODAY](https://roblox.com)")
+          FULL_DESCRIPTION=$(echo -e "$CONTENT\n\n**Game Link**: [JOIN TODAY](https://www.roblox.com/join/3ctnw)")
           
-          # Vytvoření JSON pro Discord Embed
           EMBED_JSON=$(jq -n \
             --arg content "$CONTEXT" \
             --arg title "$TITLE" \
