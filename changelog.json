@@ -22,5 +22,16 @@
       "- Fixed multiple bugs.",
       "- Multiple QOL improvements."
     ]
+  },
+  "3": {
+    "Date": "4/11/2025",
+    "Version": "1.1.1",
+    "Title": "Leaderboard & Bugfixes",
+    "Content": [
+      "- Fixed crafting UI mobile.",
+      "- Fied and improved mobile controls.",
+      "- Added top days leaderboard to lobby.",
+      "- Top 100 players worldwide get a special nametag!"
+    ]
   }
 }
